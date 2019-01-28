@@ -47,11 +47,11 @@ if($result=$ps->fetch()){
 	   var_dump($_SESSION["auth"]["role"]);
 	   $_SESSION["auth"]["id"];
 	   switch($_SESSION["auth"]["role"]){
-		   case "Agent logistique";
+		   case "ChefService";
 		   header('location:enregistrementM.php');
 		   break;
 		   case "Agentlogistique";
-		   header('location:formuAgentLog.php');
+		   header('location:enregistrementM.php');
 		   break;
 		   case "Responsable de classe";
 		   case "Professeur";
