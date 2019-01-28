@@ -29,7 +29,7 @@
         <nav>
           <ul id="menu">
             <li class="active"><a href="index.php">Accueil</a></li>
-            <li><a href="A Propos.php">A Propos</a></li>
+            <li><a href="APropos.php">A Propos</a></li>
 			
             <li><a href="AccueilMembre.php">Connexion</a></li>
           </ul>

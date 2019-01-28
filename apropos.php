@@ -78,7 +78,7 @@ function cacheId(baliseId)
         <nav>
           <ul id="menu">
        <li class="active"><a href="index.php">Accueil</a></li>
-            <li><a href="a propos.php">a propos</a></li>
+            <li><a href="apropos.php">a propos</a></li>
             <li><a href="controleur/AccueilMembre.php">Connexion</a></li>
           </ul>
         </nav>
