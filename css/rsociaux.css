@@ -1,0 +1,101 @@
+﻿
+div{
+margin :0 12 0 auto;
+}
+nav{
+position:fixed;
+top:50px;
+left:20px;
+animation:afficher 5s;
+/* -webkit-animation:afficher 5s; */
+
+}
+
+@keyframes afficher{
+from{top:-170px;}
+to{top:50px;}
+}
+
+
+/*
+browser crhome
+@-webkit-keyframes afficher{
+from{top:-170px;}
+to{top:50px;}
+}
+*/
+
+
+
+/* @keyframes afficher{
+0%{top:-170px;}
+20%{top:150px;}
+50%{right:50px;}
+100%{left:60px;}
+
+} */
+
+
+nav li{ 
+list-style:none;
+padding: 5px 0;
+}
+nav ul a{
+text-decoration:none;
+background-color:;
+display:block;
+width:50px;
+height:50px;
+
+ }
+ 
+ .fb-like{
+ margin:0 0 0 -52; 
+ 
+ }
+ .lnk{
+ margin:0 0 0 -52; 
+ 
+ }
+ .img1:hover{
+ background: url('c1.png'); }
+ 
+ .img2{
+ background:url('g1.png');}
+  .img2:hover{
+ background: url('c2.png');}
+ 
+ .img3{
+ background: url('c4.png');}
+  .img3:hover{
+ background:   url('c33.png');}
+ 
+ nav span{
+ background-color:;
+ font-size:18px;
+ color:black;
+ font-weight:bold; 
+ margin-left:50px;
+ display:inline-block;
+ height:50px;
+ width:0;
+ line-height:50px; 
+ overflow:hidden;
+ }
+ 
+ nav a:hover span{
+ width:auto;
+ padding:0 9px;  
+ transition:all 0.4s;
+ background-color:orange;
+
+ 
+ }
+ h1:hover{
+ background-color:orange;
+ color:white;
+ cursor:pointer;
+ transition:background-color 4s,
+	color 8s;
+ }
+ 

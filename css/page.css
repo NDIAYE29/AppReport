@@ -1,0 +1,45 @@
+
+/* annimation de la bande annonce  */
+
+.animated {
+transition: all 0.7s ease-out;
+}
+
+.animated {
+transition: width 700ms;
+}
+
+
+
+.ex1  a {
+	display: inline-block;
+	height: 40px;
+	width: 175px;
+	background: #666666;
+	padding: 5px 10px;
+	margin: 0 20px;
+	color: black;
+	text-decoration: none;
+	
+	/* -moz-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out; */
+	
+	transition: all 0.3s ease-out;
+	margin-bottom:12px;
+	font-weight:bold;
+	font-style: normal;
+    font-size: 12px;
+    letter-spacing:;
+	text-align:justify;
+	padding-bottom:8px;
+	
+
+}
+/*           Zoomming   */
+.ex1 a:hover,
+.ex1 a:focus {
+	transform: scale(1.2);
+		transition: all 0.3s ease-in;
+}
+  
+ 

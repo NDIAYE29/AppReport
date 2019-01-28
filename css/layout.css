@@ -1,0 +1,163 @@
+.cadre{
+ 
+	
+		border-radius:8px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	box-shadow:0 0 4px rgba(0, 0, 0, .4);
+	-moz-box-shadow:0 0 4px rgba(0, 0, 0, .4);
+	-webkit-box-shadow:0 0 4px rgba(0, 0, 0, .4);
+	position:relative;
+	margin-right:20px;
+	padding-top:12px;
+	padding-bottom:24px;
+	border-left:16px  solid  #FEFEFE;
+	border-top:16px  solid  #FEFEFE;
+	
+}
+table td{
+	margin-right:20px;
+
+}
+.col1, .col2, .col3, .col4, .cols {
+	float:left
+}
+section.col1 {
+	margin-left:32px;
+}
+
+.col1 {
+	width:250px
+}
+.cols {
+	width:220px;
+	height:800px;
+	
+}
+span {
+color:#659A01;
+font-size:17px;	
+}
+.col2 {
+	width:440px
+}
+.col3 {
+	width:430px
+}
+.col4 {
+	width:500px;
+	height:150px;
+}
+/* index.html */
+#page1 .body1 {
+	 
+	
+	margin-top:-20px
+}
+#page1 header {
+	height:614px
+}
+/* index-1.html */
+#page2 .dropcap1 {
+	font-size:39px;
+	line-height:1.2em
+}
+#page2 .dropcap1  {
+	margin-top:2px
+}
+#page2 #content2 .cols {
+	width:200px
+}
+#page2 #content2 .pad_left1 {
+	padding-left:40px
+}
+ .marg_bot{
+	margin-bottom:16px
+}
+/* index-2.html */
+.marg_right1 {
+	margin-right:30px;
+	float:right;
+}
+.marg_right2 {
+margin-right:8px;
+	float:right;
+	}
+
+#page3 #content .dropcap1 {
+	font-size:39px;
+	line-height:1.2em
+}
+#page3 #content .dropcap1 span {
+	margin-top:3px
+}
+#page3 #content .pad_left1 {
+	padding-left:40px
+}
+#page3 #content2 {
+	padding-bottom:22px
+}
+/* index-3.html */
+#page4 header {
+	height:157px
+}
+#page4 #content2 {
+	padding-bottom:22px;
+	padding-top:12px
+}
+#page4 #content2 .cols {
+	width:280px
+}
+.pad_right1 {
+	padding-right:40px
+}
+.pad_left1 {
+	padding-left:40px
+}
+
+.left1 {
+	margin-left:12px;
+	
+}
+.left2 {
+	margin-left:48px;
+	
+}
+
+
+#page4 #content2 {
+	padding-bottom:44px
+}
+/* index-4.html */
+#page5 header {
+	height:157px
+}
+.mrtd {
+	margin-left:4px;
+}
+ .col5 {
+	width:auto;
+	height:500px;
+}
+
+#page5 .marg_right1 {
+	margin-right:30px
+}
+
+.marg_bot3 {
+	margin-bottom:48px
+}
+.marg_bot {
+	margin-bottom:12px
+}
+.marg_top {
+	margin-top:12px
+}
+
+.pdtd {
+	padding-right:4px
+}
+
+.marg_top1 {
+	margin-top:48px
+}

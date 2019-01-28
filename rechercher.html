@@ -1,0 +1,37 @@
+<html>
+
+<head>
+
+<title>Rechercher</title>
+<link href="css/style2.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+  <form action='recherche.php' target="rechbas" method='post' name="rechercher" enctype="multipart/form-data">
+    <table width=50% align=center>
+      <tr>
+        <td align=rigth bgcolor="#CCFF00"><input class='text' type="text" name="recherche" size=70 maxlength=80></td>
+        <td align=left bgcolor="#CCFF00"><input class="bouton" type="submit" name="Rechercher" value="Rechercher"></td>
+      </tr>
+    </table>
+    <table width=35% align=center>
+      <tr>
+        <!--<td><input type="radio" name="choix" value="nom" checked>  nom</td>
+		<td><input type="radio" name="choix" value="prenom" checked> &nbsp;&nbsp;&nbsp prenom</td>&nbsp;&nbsp;&nbsp
+        <td><input type="radio" name="choix" value="email"> &nbsp;&nbsp;&nbsp email</td> &nbsp;&nbsp;&nbsp-->
+        <td><input type="radio" name="choix" value="category">&nbsp;&nbsp;&nbsp category</td>&nbsp;&nbsp;&nbsp
+        <td><input type="radio" name="choix" value="lieu"> lieu</td>&nbsp;&nbsp;&nbsp
+        <td><input type="radio" name="choix" value="date_sent"> date</td>&nbsp;&nbsp;&nbsp
+		<td><input type="radio" name="choix" value="code">&nbsp;&nbsp;&nbsp codeMa</td>&nbsp;&nbsp;&nbsp
+		<td><input type="radio" name="choix" value="id">&nbsp;&nbsp;&nbsp identifiant</td>&nbsp;&nbsp;&nbsp
+		<td><input type="radio" name="choix" value="image"> &nbsp;&nbsp;&nbsp image</td>&nbsp;&nbsp;&nbsp
+		<td><input type="radio" name="choix" value="message">&nbsp;&nbsp;&nbsp message</td>&nbsp;&nbsp;&nbsp
+      </tr>
+    </table>
+  </form>
+
+</body>
+
+</html>

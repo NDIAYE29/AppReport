@@ -1,0 +1,18 @@
+.spacer{
+    margin-top: 20px;
+}
+.myTable{
+
+}
+.myTable h4 {
+padding: 10px;
+margin: 10px;
+border: 1px dotted gray;
+background:pink ;
+}
+.myTable td {
+    padding: 10px;
+    margin: 10px;
+    border: 1px dotted rgb(45, 214, 219);
+    background:white ;
+    }

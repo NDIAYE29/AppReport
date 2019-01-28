@@ -1,0 +1,67 @@
+﻿
+	.article{
+	width:980px;
+	height:auto;
+	border:0.5px;
+	position:relative;
+	display:block;
+	margin:12 12 12 12;
+	padding-top:48px;
+	float:right;
+	box-shadow: 0 0 3px  rgba(0,0,0, 0.5) inset;
+	background-color:#fff;
+	
+	}
+		.title {
+    border-bottom: 2px solid #35eb0c ;
+	width:1012px;
+	margin: 4px auto 2px 16px;
+	
+}	
+	.ptext{
+	text-align:justify;
+	display:inline;
+	font-size:12px;
+	font-weight:bold;
+	font-style:Arial;
+	margin:12 12 12 12 ;
+	font-style:Arial;
+	}
+	
+	#slide {
+    position: relative;    /* le parent positionné */
+    width: 850px;          /* limite en largeur (1 élément du slide) */
+    height: 530px;         /* limite en hauteur */
+    overflow: hidden;      /* on cache ce qui déborde */
+}
+
+
+ 
+#sContent {
+    position: absolute;   /* on sort l'élément du flux */
+    top: 0;               /* on le positionne précisément dans... */
+    left: 0;              /* l'angle haut gauche de son parent positionné */
+    margin: 0;            
+    padding: 0;
+        width: 900;          /* ou 200% (car deux éléments) */
+    /* CSS3 Transition */
+    transition: left 1s;
+}
+#sContent li {
+    display: inline;      /* on aligne les éléments du slide */
+}
+#slide:target #sContent {
+        /* en ciblant #slide on décale #sContent */
+    left: -530px;         /* ou - 100% */
+}
+
+.but{
+float:right;
+position:relative;
+margin:-500 0 0 -100
+}
+
+#butl{
+margin:-500 0 0 -100;
+position:absolute;
+}

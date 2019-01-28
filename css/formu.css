@@ -1,0 +1,543 @@
+﻿body {
+	border:0;
+	font:16px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:black;
+	line-height:22px;
+	background-color:#f9f9f9;
+}
+
+
+
+.contenu {
+   position: ;
+    margin: 0 auto 10px 90;
+    width: 998;
+	height:auto;
+    border: 1px solid #E0E0E0;
+	background-color:white;
+}
+
+#content {
+   position: ;
+    margin: 0 auto 10px 140;
+    width: 999;
+	height:auto;
+    border: 1px solid #E0E0E0;
+	background-color:white;
+}
+
+#cb{
+float:center;
+margin:0 0 0 50;
+}
+
+#pied{
+    width: 1001px;
+    color: white;
+    text-align: center;
+    font-size: normal;
+    font-weight: bold;
+    clear: both;
+    margin:-28 0 0 140;
+	background-color:#8bba1c;
+	height:30;
+
+}
+
+.deconnect a{
+   background-color:#8bba1c ;
+    float:right;
+	border :1px inset;
+	margin:1 12 1 0;
+	color:white;
+    font-size:20;
+	font-style:Arial
+
+}
+
+/* remove codrops styles and reset the whole thing */
+label{
+font-weight:bold;
+
+}
+
+/** fonts used for the icons **/ 
+@font-face {
+    font-family: 'FontomasCustomRegular';
+    src: url('fonts/fontomas-webfont.eot');
+    src: url('fonts/fontomas-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/fontomas-webfont.woff') format('woff'),
+         url('fonts/fontomas-webfont.ttf') format('truetype'),
+         url('fonts/fontomas-webfont.svg#FontomasCustomRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FranchiseRegular';
+    src: url('fonts/franchise-bold-webfont.eot');
+    src: url('fonts/franchise-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/franchise-bold-webfont.woff') format('woff'),
+         url('fonts/franchise-bold-webfont.ttf') format('truetype'),
+         url('fonts/franchise-bold-webfont.svg#FranchiseRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.ic, .ic a {
+	border:0;
+	float:right;
+	background:#fff;
+	color:#f00;
+	width:50%;
+	line-height:10px;
+	font-size:10px;
+	margin:-220% 0 0 0;
+	overflow:hidden;
+	padding:0
+}
+ol, ul {
+	list-style:none
+}
+/* a.hiddenanchor{
+	display: none;
+} */
+/** The wrapper that will contain our two forms **/
+#wrapper{
+	width: 60%;
+	right: 0px;
+	min-height: 560px;	
+	margin: 0px auto;	
+	width: 500px;
+	position: relative;	
+}
+/**** Styling the form elements **/
+
+/**** general text styling ****/
+#wrapper a{
+	color: rgb(95, 155, 198);
+	text-decoration: underline;
+}
+
+#wrapper h1{
+	font-size: 48px;
+	color: rgb(255, 106, 117);
+	padding: 8px 0 10px 0;
+	font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 10px;
+}
+#wrapper h2{
+	font-size: 18px;
+	color:  rgb(95, 155, 198);
+	padding: 2px 0 10px 0;
+	font-family: Arial;
+	font-weight: bold;
+	text-align: center;
+}
+/** For the moment only webkit supports the background-clip:text; */
+#wrapper h1{
+    background: -webkit-repeating-linear-gradient(-45deg, 
+	rgb(18, 83, 93) , 
+	rgb(18, 83, 93) 20px, 
+	rgb(64, 111, 118) 20px, 
+	rgb(64, 111, 118) 40px, 
+	rgb(18, 83, 93) 40px);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+#wrapper h1:after{
+	content: ' ';
+	display: block;
+	width: 100%;
+	height: 20px;
+	margin-top: 10px;
+	background: -moz-linear-gradient(left, rgba(147,184,189,0) 0%, rgba(147,184,189,0.8) 20%, rgba(147,184,189,1) 53%, rgba(147,184,189,0.8) 79%, rgba(147,184,189,0) 100%); 
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(147,184,189,0)), color-stop(20%,rgba(147,184,189,0.8)), color-stop(53%,rgba(147,184,189,1)), color-stop(79%,rgba(147,184,189,0.8)), color-stop(100%,rgba(147,184,189,0))); 
+	background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+	background: -o-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+	background: -ms-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+	background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+}
+
+#wrapper p{
+	margin-bottom:15px;
+}
+#wrapper p:first-child{
+	margin: 0px;
+}
+#wrapper label{
+	color: black;
+	position: relative;
+}
+
+/**** advanced input styling ****/
+/* placeholder */
+::-webkit-input-placeholder  { 
+	color: rgb(190, 188, 188); 
+	font-style: italic;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder{ 
+	color: rgb(190, 188, 188);
+	font-style: italic;
+} 
+input {
+  outline: none;
+}
+
+/* all the input except submit and radio */
+#wrapper input:not([type="radio"]){
+	width: 90%;
+	margin-top: 4px;
+	padding: 10px 5px 10px 32px;	
+	border: 2px solid black;
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	  -moz-box-sizing : content-box;
+	       box-sizing : content-box;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	   -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	        box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	-webkit-transition: all 0.2s linear;
+	   -moz-transition: all 0.2s linear;
+	     -o-transition: all 0.2s linear;
+	        transition: all 0.2s linear;
+}
+#wrapper input:not([type="radio"]):active,
+#wrapper input:not([type="radio"]):focus{
+	border: 1px solid rgba(91, 90, 90, 0.7);
+	background: #f5f4f4;	
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	   -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+	        box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+} 
+
+/** the magic icon trick ! **/
+[data-icon]:after {
+    content: attr(data-icon);
+    font-family: 'FontomasCustomRegular';
+    color: black;
+    position: absolute;
+    left: 10px;
+    top: 35px;
+	width: 30px;
+}
+
+/*styling both submit buttons */
+#wrapper p.button input{
+	width: 30%;
+	cursor: pointer;	
+	background:#FBA11B ;
+	padding: 8px 5px;
+	font-family: 'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
+	color: white;
+	font-size: 25px;	
+	border: 1px solid rgb(28, 108, 122);	
+	margin-bottom: 10px;	
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;	
+	-webkit-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+	        0px 0px 0px 3px rgb(254, 254, 254),
+	        0px 5px 3px 3px rgb(210, 210, 210);
+	   -moz-box-shadow:0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+	        0px 0px 0px 3px rgb(254, 254, 254),
+	        0px 5px 3px 3px rgb(210, 210, 210);
+	        box-shadow:0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+	        0px 0px 0px 3px rgb(254, 254, 254),
+	        0px 5px 3px 3px rgb(210, 210, 210);
+	-webkit-transition: all 0.2s linear;
+	   -moz-transition: all 0.2s linear;
+	     -o-transition: all 0.2s linear;
+	        transition: all 0.2s linear;
+}
+#wrapper p.button input:hover{
+	background: rgb(74, 179, 198);
+}
+#wrapper p.button input:active,
+#wrapper p.button input:focus{
+	background: rgb(40, 137, 154);
+	position: relative;
+	top: 1px;
+	border: 1px solid rgb(12, 76, 87);	
+	-webkit-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+	   -moz-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+	        box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+}
+p.login.button,
+p.signin.button{
+	text-align: center;
+	margin: 20px 0;
+}
+
+
+/* styling the radio "keep me logged in"*/
+.keeplogin{
+	margin-top: -5px;
+}
+.keeplogin input,
+.keeplogin label{
+	display: inline-block;
+	font-size: 12px;	
+	font-style: italic;
+}
+.keeplogin input#loginkeeping{
+	margin-right: 5px;
+}
+.keeplogin label{
+	width: 80%;
+}
+
+
+.lt8 #wrapper input{
+	padding: 10px 5px 10px 32px;
+    width: 92%;
+}
+.lt8 #wrapper input[type=radio]{
+	width: 10px;
+	padding: 0;
+}
+
+
+.lt8 p.change_link,
+.ie9 p.change_link{
+	position: absolute;
+	height: 90px;
+	background: transparent;
+	
+}
+
+.connexion a{
+   background-color:#d2d2d2 ;
+    float:;
+	border :4px inset;
+	margin:1 12 1 0;
+	color:white;
+    font-size:20;
+	font-style:Arial
+
+}
+/* //////////////////menu/////////////////// */
+
+
+a{
+	outline:none
+}
+
+ul{
+	margin:0;
+	padding:0;
+}
+a img {
+    border: none;
+}
+
+
+
+
+
+.clear {
+    clear: both;
+    visibility: active;
+	width:1001px;
+	position:center;
+	margin-top:-1px;
+	float:left;
+	height:40px;
+	/* opacity au niveau du menu */
+	background-color:#8bb02c;
+	margin-left:-1
+	
+	}
+/* /////////design/////// */
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {
+	display:block
+}
+mark, rp, rt, ruby, summary, time {
+	display:inline
+}
+/* Left & Right alignment */
+
+.left {
+	float:left
+}
+.right {
+	float:right
+}
+.wrapper {
+	width:1050px;
+	overflow:hidden;
+	background-color:white;
+	margin-top:0.3px;
+	padding-bottom:4px;
+	border:2px solid  #FBA11B;
+
+}
+.enveloppe {
+	width:1020px;
+	overflow:hidden;
+	margin-top:0.3px;
+	padding-bottom:4px;
+	display:inline
+
+}
+/* Global Structure */
+.main {
+	margin:auto auto;
+	width:1050px;
+
+}
+.main_principal {
+	margin:auto auto;
+	width:1050px;
+	height:auto;
+	background-color:#fff;
+	border: 0.3px solid  #FBA11B;
+	border-radius: 4px ;
+	position:relative;
+	
+	
+	}
+
+
+
+.body1 {
+	
+	height:auto;
+	padding-top:;
+/* 		background:url(images/header1.png) bottom repeat-x #92d30f;
+ */
+}
+
+.body2 {
+	background:#fff;
+	height:650px;
+	padding-top:24px;
+	width:1000px;
+	margin:24 24 24 24;
+}
+.body3 {
+	background:#fff;
+	height:600px;
+	padding-top:24px;
+	width:1000px;
+	margin:24 24 24 24;
+}
+/* main layout */
+a {
+	color:#fff;
+	text-decoration:underline;
+	outline:none
+}
+a:hover {
+	text-decoration:none
+}
+
+h2 {
+	font-size:25px;
+	color:green;
+	line-height:1.2em;
+	padding:8px 0 6px 0;
+	font-weight:normal;
+	letter-spacing:-2px;
+
+}
+h2 span {
+	display:block;
+	margin-top:-7px
+}
+h3 {
+	font-size:25px;
+	color:green;
+	font-weight:normal;
+	line-height:1.2em;
+	padding:34px 0 8px 0;
+	letter-spacing:-1px;
+	margin-left:24px
+}
+p {
+	padding-bottom:22px
+}
+/* header */
+header {
+	height:auto;
+}
+
+
+.bannierefinal{
+	display:block;
+	background:url(../images2/bannierefinal.jpg) 0 0 no-repeat;
+	width:1050px;
+	height:189px;
+	
+	}
+
+
+
+#menu {
+	float:center;
+	padding:6px 0px 0 190px
+}
+#menu li {
+	float:left;
+	padding-left:1px
+}
+#menu li a {
+	display:;
+	font-size:19px;
+	color:black;
+	text-decoration:none;
+	line-height:42px;
+	height:43px;
+	padding:0 19px;
+	border-radius:20px;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	position:relative;
+}
+/*menu accueil et autre*/
+#menu li a:hover {
+	background: #EC9512 ;
+	color:#fff
+}
+#menu li a:hover, #menu .active a {
+	background/*\**/:url(../images/menu_bg.gif) top repeat-x #\9
+}
+/* footer */
+#footer span {
+
+    width: 1050px;
+    color:#fff;
+    text-align: center;
+    background-color: #FBA11B;
+    line-height: 29px;
+    font-size: 29px;
+    font-weight: bold;
+    clear: both;
+    margin:auto auto 24px 0px ;
+	float:left;
+	padding-top:auto;
+	height:60px;
+    
+}
+.clear{
+float:bottom;
+margin-top:48px;
+clear:both;
+}
+
+select{
+width:300px;
+font-size:16px;
+font-style:Arial;
+height:35px;
+border:6px solid  black;
+	-webkit-box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+
+}
