@@ -7,12 +7,12 @@
 .myTable h4 {
 padding: 10px;
 margin: 10px;
-border: 1px dotted gray;
+border: 1px dotted gold;
 background:pink ;
 }
 .myTable td {
     padding: 10px;
     margin: 10px;
-    border: 1px dotted rgb(45, 214, 219);
+    border: 1px dotted paleturquoise;
     background:white ;
     }

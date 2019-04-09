@@ -16,7 +16,7 @@
   //affichage des r�sultats, pour savoir si la suppression a march�e:
   if($requete)
   {
-    echo("La suppression a ete correctement effectuee") ;
+    header('location:suppression1.php');
   }
   else
   {

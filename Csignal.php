@@ -1,16 +1,52 @@
 <html>
 <head>
+<link rel="shortcut icon" href="images/favicon.PNG">
  
  <title>saisie materiels</title>
+ <link href="css1/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css1/font-awesome.min.css">
+  <link href="css1/animate.min.css" rel="stylesheet">
+  <link href="css1/animate.css" rel="stylesheet" />
    <link href="css/design.css" rel="stylesheet" type="text/css" >   
    <link href="css/designformu.css" rel="stylesheet" type="text/css" >   
 	 <link href="css/bootstrap.min.css" rel="stylesheet">
-	 <link href="css/bootstrap.min.css" rel="stylesheet">
+	 <link rel="shortcut icon" href="images2/app.png" /> 
  <link rel="stylesheet" type="text/css" href="../css/myStyle.css"/>
- </head>
+ </head><br>
 
 
-<body>
+<body><br><br>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="site-logo">
+		 <a class="brand" href="index.html"><img src="images2/app.png" width="90px" height="35px" >  <!--<span>MIKHA</span>-->   </a>
+          <a href="index.html" class="brand"></a>
+        </div>
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.php"><i class="fa fa-home"></i>ACCUEIL</a></li>
+            
+            
+            <li><a href="AccueilMembre.php"> <i class="fa fa-lock"></i>DECONNEXION</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+        <!-- /.Navbar-collapse -->
+      </div>
+    </div>
+  </nav>
+
 <div class="body1">
   <div class="main">
   
@@ -19,27 +55,11 @@
 	</div>
 	
 	</div>
-	</div>  
+	</div>  <br><br>
 	<div class="main_principal">
 
    
-    <div class="header">
-			<center>
-			<br><br><br>
-				<nav class="mn">
-        <ul id="mn">
-          <li > <a href="AccueilMembre.php" class="but6"><span class="" style="">retour</span></a></li>
-          <li > <a href="deconnexion.php" class="but6"><span class="" style="">deconnecter</span></a></li>
-		</ul>
-</nav>
-<div class="image">     
-
-<div class="image5"> <a href="AccueilMembre.php"><img src="images/back.png" width=50 height=50  style="margin-left:20px"> 
-</a></div>
-<div class="image6"> <a href="deconnexion.php" ><img src="images2/1.jpg" width=50 height=50  style="margin-left:34px"> </a></div>
-		</div>
-	</center>
-			</div>	
+   
 
 <div>
 <div class= " panel panel-default">
@@ -51,17 +71,17 @@
    <div class="container" >
 
 
-<?php require_once("entete.php")?>
+
 <!-- <div>
 <div class= " panel panel-default">
 <div class= "panel-heading">Saisie materiels</div>-->
 <div class="panel-body">
-   <form method="post" action="insertionM.php" enctype="multipart/form-data">
+   <form method="post" action="insert4.php" enctype="multipart/form-data">
    <div class="form-group">
    <span class="glyphicon glyphicon-minus"></span>
-<label class="control-label">category:</label>
+<label class="control-label">catégorie:</label>
 <div style="float:center;width:100%;">
-					<select type="text" name="category" style="font-size:15px" class="form-control" id="txt_type"required/>
+					<select type="text" name="category" style="font-size:15px" class="form-control" id="txt_type" required/>
 <option value="0">Choisissez un type  materiel</option>
 <option name="armoire"  >ARMOIRE</option>
 <option name="a">Armoire coulissante</option><option name="3"  >Armoire de rangement</option>
@@ -91,23 +111,23 @@
    <div class="form-group">
    <span class="glyphicon glyphicon-minus"></span>
 <label class="control-label">lieu:</label>
-<input type="text" name="lieu" class="form-control"/>
+<input type="text" name="lieu" class="form-control" required/>
    </div>
-   <div class="form-group">
+   <!--<div class="form-group">
    <span class="glyphicon glyphicon-minus"></span>
 <label class="control-label">date_sent:</label>
-<input type="date" name="date_sent" class="form-control"/>
-   </div>
+<input type="date" name="date_sent" class="form-control" required/>
+   </div>-->
    <div class="form-group">
    <span class="glyphicon glyphicon-minus"></span>
 <label class="control-label">code:</label>
-<input type="text" name="code" class="form-control"/>
+<input type="text" name="code" class="form-control" required/>
    </div>
 
    <div class="form-group">
    <span class="glyphicons glyphicon-asterisk"></span> 
 <label class="control-label">image:</label>
-<input type="file" name="image" class="form-control"/>
+<input type="file" name="image" class="form-control" required/>
 </div>
 <div class="form-group">
 <span class="glyphicon glyphicon-pencil"></span>
@@ -115,7 +135,11 @@
 <textarea class="form-control" rows="6" placeholder="contenu du message...
 " name="message" required/></textarea>
    </div>
-
+   <div class="form-group">
+   <span class="glyphicon glyphicon-minus"></span>
+<label class="control-label">nombre:</label>
+<input type="text" name="nombre" class="form-control" required/>
+   </div>
    </div>
   <!-- <button type="submit">Envoyer</button>
    <button ><input type="reset" value="Effacer"></button>

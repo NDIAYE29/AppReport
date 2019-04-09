@@ -231,7 +231,7 @@ input {
 #wrapper p.button input{
 	width: 30%;
 	cursor: pointer;	
-	background:#FBA11B ;
+	background:gray ;
 	padding: 8px 5px;
 	font-family: 'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
 	color: white;
@@ -397,13 +397,14 @@ mark, rp, rt, ruby, summary, time {
 	margin:auto auto;
 	width:1050px;
 	height:auto;
-	background-color:#fff;
-	border: 0.3px solid  #FBA11B;
+	background-color:white;
+	border: 0.3px solid  #cccccc;
 	border-radius: 4px ;
 	position:relative;
 	
 	
 	}
+	
 
 
 
@@ -411,6 +412,7 @@ mark, rp, rt, ruby, summary, time {
 	
 	height:auto;
 	padding-top:;
+	
 /* 		background:url(images/header1.png) bottom repeat-x #92d30f;
  */
 }
@@ -490,7 +492,7 @@ header {
 }
 #menu li a {
 	display:;
-	font-size:19px;
+	font-size:13px;
 	color:black;
 	text-decoration:none;
 	line-height:42px;
@@ -503,8 +505,8 @@ header {
 }
 /*menu accueil et autre*/
 #menu li a:hover {
-	background: #EC9512 ;
-	color:#fff
+	 
+	color:blue
 }
 #menu li a:hover, #menu .active a {
 	background/*\**/:url(../images/menu_bg.gif) top repeat-x #\9

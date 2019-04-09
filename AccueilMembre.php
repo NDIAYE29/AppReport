@@ -1,26 +1,5 @@
-﻿<!-- <?php
-				
-				echo "<center>"	;	
-				
-
-		echo "<h4>Veuillez S'identifier!</h4> ";
-		
-		echo" <a href='membreResp.php'> Responsable classe &nbsp;&nbsp;  </a>";
-			echo"<tr align='middle'>";
-			echo "<a href='membreProf.php'>  Professeur &nbsp;&nbsp; </a>";
-		
-		
-				   echo" <a href='membreAgent.php'> Agent Logistique &nbsp;&nbsp;</a>"; 
-				   echo"<tr align='middle'>";
-			echo " <a href='membreChefservice.php'>  Chef Servive &nbsp;&nbsp;</a>";
-		
-		
-		
-		echo "     <a href='membreChefvigile.php'>Chef Vigile &nbsp;&nbsp;</a>";
-		echo"<tr align='middle'>";
-echo " <a href='membrePrestataire.php'>Prestataire &nbsp;&nbsp;</a> "; echo "</center>";
-		
-?> -->
+﻿
+  
 <?php
 /*$host='localhost';
 $user='root';
@@ -32,12 +11,12 @@ require_once("conn.php");
 if(isset($_POST['submit'])){
 $email=htmlspecialchars($_POST['username']) ;
 $mdp=htmlspecialchars($_POST['mdp']);  
-$profil=htmlspecialchars($_POST['profil']);
-$req="select * from utilisateur where email = '$email' and mdp = '$mdp' and role= '$profil' ";
+//$profil=htmlspecialchars($_POST['profil']);
+$req="select * from utilisateur where email = '$email' and mdp = '$mdp'  ";
 //$result=mysqli_query($db,$sql);
 $ps=$pdo->prepare($req);
-var_dump($ps);
-var_dump($ps->fetch());
+//var_dump($ps);
+//var_dump($ps->fetch());
 $ps->execute();
 if($result=$ps->fetch()){
 	if($result){
@@ -48,14 +27,14 @@ if($result=$ps->fetch()){
 	   $_SESSION["auth"]["id"];
 	   switch($_SESSION["auth"]["role"]){
 		   case "ChefService";
-		   header('location:enregistrementM.php');
-		   break;
-		   case "Agentlogistique";
+		   case "Agent logistique";
+		   
 		   header('location:enregistrementM.php');
 		   break;
 		   case "Responsable de classe";
-		   case "Professeur";
-		   case "ChefVigile";
+		   case "Professeur principal";
+		   case "Chef des vigiles";
+		   case "Surveillant général";
 		   header('location:Csignal.php');
 		   break;
 		   case "Prestataire":
@@ -74,56 +53,99 @@ exit();
 }
 }
 ?> 
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Connexion</title>
-   <link href="css/membre.css" rel="stylesheet" type="text/css" /> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/favicon.PNG">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>AppReport</title>
+<!--<title>Connexion</title>-->
+
+
 <link href="css/styles.css" rel="stylesheet">
+<link href="LoginCss/style.css" rel="stylesheet">
+<link rel="shortcut icon" href="images/favicon.PNG">
+<link href="css/style1.css" rel="stylesheet" type="text/css">
+
+
+<link href="css1/bootstrap.min.css" rel="stylesheet">
   
-	
+  <link rel="stylesheet" href="css1/font-awesome.min.css">
+  <link href="css1/animate.min.css" rel="stylesheet">
+  
+  
+  
+
+
+        
 
 <!--[if lt IE 9]>
-<script type="text/javascript" src="js/html5.js"></script>
-<style type="text/css">#menu a, .bg, .bg2, #ContactForm a {behavior:url("../js/PIE.htc")}</style>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
 <![endif]-->
+
 </head>
+ <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="site-logo">
+		 <a class="brand" href="index.html"><img src="images/logo.PNG" width="90px" height="35px">   </a>
+          <a href="index.html" class="brand">AppReport</a>
+        </div>
+        
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+        
+
+
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="nav navbar-nav navbar-right">
+            
+            <li><a href="index.php">Retour</a></li>
+          </ul>
+        </div>
+        <!-- /.Navbar-collapse -->
+      </div>
+    </div>
+  </nav>
 <body>
-<div class="body1">
-  <div class="main">
-  
-    <!--header 
-	<div class="bannierefinal">  
-	</div>-->
-	
-	</div>
-	</div>
-	    <!-- content -->
-  <div class="main_principal">
-   
-<div class="">
-	<br>
-	<span style='float:right; color:blue;font-size:16px;margin-right:20' > Accueil </span>  
- 
-	<a href='index.php'> <br><img src='images2/acc.jpg' width=40 height=40 style='float:right;'> 
-	</a>
-   </div>  
-<?php
+	<br><br><br>	
+		
+			<div class="login-panel panel panel-default">
+				<div class="box" style="height: 420px;">
+						<?php
 if (isset($_GET['error']))
 {
-echo "<center>";
-		echo '<div class="alert bg-danger" role="alert" style="width: 38%;
-    height: 50px;" align="center">
-          <svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> login ou  mot de passe est incorrecte! <a  class="pull-right" aria-hidden="true"></a>
+		echo '<div class="alert bg-danger" role="alert" style="width: 100%;
+    height: 50px;">
+          <svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> le nom ou le mot de passe est incorrecte! <a  class="pull-right" aria-hidden="true"></a>
         </div>' ;
-		echo "</center>";
 
-}?>   
-		  <div id="login">
-		  
-  <h1 id="header">Login</h1>
+}?>
+
+  
+  <div id="login">
+		  <center>
+  <h1 id="header">Se Connecter 
 <form method="POST" enctype="multipart/form-data">
-<h5 > <img src="images2/identifi.jpg"  width=140 height=100> </h5>
-<select name="profil" required="required" >	
+<h5 > <img src="images2/identifi.jpg"  width=140 height=70> </h5></h1>
+<!--<div class="group">      
+      <select class="inputMaterial" type="text" name="profil" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>	
+<option> Profil</option>
 <option value="Professeur"> <a href='membreProf.php'></a> Professeur</option>		 		 
 <option value="ChefVigile" onclick="javascript:afficheId('l2');" >ChefVigile</option>		 
 <option value="Agent logistique" onclick="javascript:afficheId('l3');" >Agent logistique</option>		 
@@ -131,27 +153,37 @@ echo "<center>";
 <option value="Responsable de classe" onclick="javascript:afficheId('l5');">Responsable de classe</option> 
 <option value="Prestataire"onclick="javascript:afficheId('l6');">Prestataire</option>          
 
-</select>
+</select><br><br>
 
-    <!--<h5> identification</h5>
+     <h5> identification</h5>
 	<input type="text" name="identif" placeholder="identification" id="identification" required="required"></input>-->
-	<div class="form_input">
-	<h5> login</h5>
-<input type="text" name="username" placeholder="username" required/>
-</div>
-<div class="form_input">
-<h5> password</h5>
-<input type="password" name="mdp" placeholder="password" required/>
+	
+	</center>
+	
+	<div class="group">  
+<input class="inputMaterial" type="text" name="username" placeholder="" required/>
+<span class="highlight"></span>
+      <span class="bar"></span>
+	  <label>Utilisateur</label>
 </div>
 
-<input type="submit" name="submit" value="connexion" class="btn_login"/>
+<div class="group"> 
+<input class="inputMaterial" type="password" name="mdp" placeholder="" required/>
+<span class="highlight"></span>
+      <span class="bar"></span>
+	  <label>Mot de passe</label>
+</div>
 
+<center>
+
+<input type="submit" name="submit" value="Connexion" class="btn_login"/> 
+</center>
 </form>
+<div id="footer-box" ><p class="footer-text"> <span class="sign-up" > Mot de passe oublier?</span> /<!-- <a href="inscrire.php">--><span class="sign-up" > S'inscrire</span></p></div>
 </div>
-  
 </div>
 
-<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/chart.min.js"></script>
 	<script src="js/chart-data.js"></script>
@@ -176,6 +208,3 @@ echo "<center>";
 </body>
 
 </html>
-
-
- 

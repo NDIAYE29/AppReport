@@ -16,21 +16,21 @@
 
   $role       = $_POST["role"] ;
  
-  //cr�ation de la requ�te SQL:
+  //creation de la requete SQL:
   $sql = "INSERT  INTO utilisateur (nom, username,  email, mdp,role)
             VALUES ( '$nom', '$username', '$email', '$mdp','$role') " ;
  
-  //ex�cution de la requ�te SQL:
+  //execution de la requete SQL:
     $ps=$pdo->prepare($sql);
   $requete =$ps->execute();
  
   //affichage des r�sultats, pour savoir si l'insertion a march�e:
   if($requete)
   {
-    echo("L'insertion a �t� correctement effectu�e") ;
+    header('location:index3.php');
   }
   else
   {
-    echo("L'insertion � �chou�e") ;
+    header('location:insert1.php');
   }
 ?>

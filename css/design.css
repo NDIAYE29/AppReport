@@ -369,7 +369,7 @@ input[type='submit']{
 			input[type='reset']{
 	width: auto;
 	cursor: pointer;	
-	background:#FBA11B ;
+	background:gray ;
 	font-style: Arial Narrow;
 	color: #fff;
 	font-size: 25px;	
@@ -377,7 +377,7 @@ input[type='submit']{
 	margin-top:24px;
 	}
 			input[type='reset']:hover{
-			background:#F0FFff;
+			background:black;
 			}
 			
 			#put{

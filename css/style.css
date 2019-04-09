@@ -164,7 +164,7 @@ header {
 
 .bannierefinal {
 	display:block;
-	background:url(../images2/bannierefinal.jpg) 0 0 no-repeat;
+	background:url(../images2/bannierefinal.PNG) 0 0 no-repeat;
 	width:1050px;
 	height:149px;
 	margin:12 0 12 0;
@@ -211,7 +211,8 @@ font-weight:normal;
 }
 .slider_bg {
 	width:1050px;
-	height:300px;
+	height:110px;
+	size:9;
 /*  	background:url(../images/tour.png) 0 0 no-repeat;
  */ 	margin-bottom:auto;
 
@@ -230,7 +231,7 @@ font-weight:normal;
 	bottom:auto;
 	position:absolute;
 	z-index:1;
-	height:300px;
+	height:110px;
 
 }
 .slider .items {
@@ -334,29 +335,29 @@ clear:both;
 	}
 	
 	#slide {
-    position: relative;    /* le parent positionné */
-    width: 960px;          /* limite en largeur (1 élément du slide) */
+    position: relative;    /* le parent positionnï¿½ */
+    width: 960px;          /* limite en largeur (1 ï¿½lï¿½ment du slide) */
     height: 430px;         /* limite en hauteur */
-    overflow: hidden;      /* on cache ce qui déborde */
+    overflow: hidden;      /* on cache ce qui dï¿½borde */
 }
 
 
  
 #sContent {
-    position: absolute;   /* on sort l'élément du flux */
-    top: 0;               /* on le positionne précisément dans... */
-    left: 0;              /* l'angle haut gauche de son parent positionné */
+    position: absolute;   /* on sort l'ï¿½lï¿½ment du flux */
+    top: 0;               /* on le positionne prï¿½cisï¿½ment dans... */
+    left: 0;              /* l'angle haut gauche de son parent positionnï¿½ */
     margin: 0;            
     padding: 0;
-        width: 1000px;          /* ou 200% (car deux éléments) */
+        width: 1000px;          /* ou 200% (car deux ï¿½lï¿½ments) */
     /* CSS3 Transition */
     transition: left 1s;
 }
 #sContent li {
-    display: inline;      /* on aligne les éléments du slide */
+    display: inline;      /* on aligne les ï¿½lï¿½ments du slide */
 }
 #slide:target #sContent {
-        /* en ciblant #slide on décale #sContent */
+        /* en ciblant #slide on dï¿½cale #sContent */
     left: -580px;         /* ou - 100% */
 }
 
