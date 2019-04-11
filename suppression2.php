@@ -13,7 +13,7 @@
     $ps=$pdo->prepare($sql);
     $requete =$ps->execute();
  
-  //affichage des r�sultats, pour savoir si la suppression a march�e:
+  //affichage des resultats, pour savoir si la suppression a marchée:
   if($requete)
   {
     header('location:suppression1.php');
