@@ -1,6 +1,6 @@
 <html>
  <head>
-  <title>Materiels signalés</title>
+  <title>Materiels signalÃ©s</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
   <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
@@ -10,7 +10,7 @@
   
   <link href="css/style1.css" rel="stylesheet" type="text/css">
 	<link href="css/formu.css" rel="stylesheet" type="text/css" />  
-           <link rel="shortcut icon" href="../favicon.ico" /> 
+           <link rel="shortcut icon" href="images/favicon.png" /> 
            <link href="css1/bootstrap.min.css" rel="stylesheet">
            <link href="css/bootstrap.min.css" rel="stylesheet">
            
@@ -202,7 +202,7 @@ else {
 <option value="Professeur principal"> <a href='membreProf.php'></a> Professeur principal</option>		 		 
 <option value="Chef des vigiles" onclick="javascript:afficheId('l2');" >Chef des vigiles</option>		 
 <option value="Agent logistique" onclick="javascript:afficheId('l3');" >Agent logistique</option>		 
-<option value="Surveillant général"onclick="javascript:afficheId('l4');">Surveillant général</option>         
+<option value="Surveillant gÃ©nÃ©ral"onclick="javascript:afficheId('l4');">Surveillant gÃ©nÃ©ral</option>         
 <option value="Responsable de classe" onclick="javascript:afficheId('l5');">Responsable de classe</option> 
 <option value="Prestataire"onclick="javascript:afficheId('l6');">Prestataire</option>          
 
