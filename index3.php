@@ -10,7 +10,7 @@
   
   <link href="css/style1.css" rel="stylesheet" type="text/css">
 	<link href="css/formu.css" rel="stylesheet" type="text/css" />  
-           <link rel="shortcut icon" href="../favicon.ico" /> 
+           <link rel="shortcut icon" href="images/favicon.png" /> 
            <link href="css1/bootstrap.min.css" rel="stylesheet">
            <link href="css/bootstrap.min.css" rel="stylesheet">
            
@@ -205,7 +205,7 @@ else {
 <option value="Professeur principal"> <a href='membreProf.php'></a> Professeur principal</option>		 		 
 <option value="Chef des vigiles" onclick="javascript:afficheId('l2');" >Chef des vigiles</option>		 
 <option value="Agent logistique" onclick="javascript:afficheId('l3');" >Agent logistique</option>		 
-<option value="Surveillant général"onclick="javascript:afficheId('l4');">Surveillant général</option>         
+<option value="Surveillant gÃ©nÃ©ral"onclick="javascript:afficheId('l4');">Surveillant gÃ©nÃ©ral</option>         
 <option value="Responsable de classe" onclick="javascript:afficheId('l5');">Responsable de classe</option> 
 <option value="Prestataire"onclick="javascript:afficheId('l6');">Prestataire</option>         
 
@@ -317,7 +317,7 @@ $(document).ready(function(){
  
  $(document).on('click', '.delete', function(){
   var user_fk = $(this).attr("id");
-  if(confirm("Êtes-vous sûr de vouloir supprimer cet utilisateur ?"))
+  if(confirm("ÃŠtes-vous sÃ»r de vouloir supprimer cet utilisateur ?"))
   {
    $.ajax({
     url:"delete.php",
